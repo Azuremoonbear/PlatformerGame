@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     float moveSpeed = 2f;
-    public int lives = 1;
 
     [SerializeField] Sprite spriteUp;
     [SerializeField] Sprite spriteDown;
@@ -52,5 +52,4 @@ public class PlayerController : MonoBehaviour
     {
         rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
     }
-
 }
